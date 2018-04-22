@@ -231,6 +231,22 @@ a:hover {
 .pad1 {
 }
 
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-items: center;
+    text-align: center; 
+    vertical-align: middle;
+}
+th, td {
+    align-content: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tableEst tr { 
+    line-height: 60px;
+    vertical-align: middle;
+ }
 
 .img_inner {
     max-width: 100%;
