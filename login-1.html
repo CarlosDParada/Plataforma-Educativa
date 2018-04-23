@@ -69,10 +69,11 @@
                     </select>
                   </div>
 
-                  <div class="col_full nobottommargin" align="center">
-                    <button class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" value="login" onclick="selectPerfil()">Ingresar</button>
-                  </div>
                 </form>
+                
+                <div class="col_full nobottommargin" align="center">
+                  <button class="button button-3d button-black nomargin" id="login-form-submit" name="login-form-submit" value="login" onclick="selectPerfil()">Ingresar</button>
+                </div>
 
                 </div>
               </div>
@@ -87,8 +88,11 @@
       <script>
       function selectPerfil(){
         perfil = document.getElementById('login-form-perfil');
+        alert(perfil.value);
+        window.location.href="index-estudiante.html";
 
         if(perfil.value=="Estudiante"){
+          alert("Primer if");
           window.location.href="index-estudiante.html";
         }
         else if(perfil.value=="Padre_de_familia"){
