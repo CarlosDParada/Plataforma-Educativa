@@ -612,7 +612,7 @@ body.stretched .container-fullwidth {
 	display: block;
 	position: relative;
 	margin-right: 4%;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	float: left;
 }
 
@@ -3319,7 +3319,7 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 
 #page-title {
 	position: relative;
-	padding: 50px 0;
+	padding: 20px 0;
 	background-color: #F5F5F5;
 	border-bottom: 1px solid #EEE;
 }
@@ -3512,7 +3512,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 .content-wrap {
 	position: relative;
-	padding: 80px 0;
+	padding: 40px 0;
 }
 
 #content .container { position: relative; }
@@ -13524,4 +13524,3 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-
