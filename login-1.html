@@ -90,17 +90,19 @@
       <script>
       function selectPerfil(){
         perfil = document.getElementById('login-form-perfil');
-        alert(perfil.value);
-        window.location.href="index-estudiante.html";
+        // alert('Bienvenido Estudiante');
+        // window.location.href="index-estudiante.html";
 
         if(perfil.value=="Estudiante"){
-          alert("Primer if");
+          alert("Bienvenido Estudiante");
           window.location.href="index-estudiante.html";
         }
         else if(perfil.value=="Padre_de_familia"){
+          alert('Bienvenido Padre de Familia');
           window.location.href="index-padre.html";
         }
         else if(perfil.value=="Docente"){
+          alert('Bienvenido Docente');
           window.location.href="index-docente.html";
         }
       }
