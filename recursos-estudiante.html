@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="SemiColonWeb" />
+
+  <!-- Stylesheets
+  ============================================= -->
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+  <link rel="stylesheet" href="css/dark.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="shortcut icon" href="images/logo_plataforma_mini.png">
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+
+  <!-- Document Title
+  ============================================= -->
+  <title>Estudiante</title>
+
+</head>
+
+<body class="stretched">
+
+  <!-- Document Wrapper
+  ============================================= -->
+  <div id="wrapper" class="clearfix">
+
+    <!-- Header
+    ============================================= -->
+    <header id="header" class="full-header">
+
+      <div id="header-wrap">
+
+        <div class="container clearfix">
+
+          <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+          <!-- Logo
+          ============================================= -->
+          <div id="logo">
+            <a href="index-estudiante.html" class="standard-logo" data-dark-logo="images/logo_plataforma.png"><img src="images/logo_plataforma.png" alt="Logo"></a>
+            <a href="index-estudiante.html" class="retina-logo" data-dark-logo="images/logo_plataforma.png"><img src="images/logo_plataforma.png" alt="Logo"></a>
+          </div>
+          <!-- #logo end -->
+
+          <!-- Primary Navigation
+          ============================================= -->
+          <nav id="primary-menu">
+
+            <ul>
+              <li>
+                <a href="index-estudiante.html">
+                  <div>Inicio</div>
+                </a>
+              </li>
+              <li>
+                <a href="materias-estudiante.html">
+                  <div>Materias</div>
+                </a>
+              </li>
+              <li class="current">
+                <a href="recursos-estudiante.html">
+                  <div>Recursos</div>
+                </a>
+              </li>
+              <li>
+                <a href="informacion-estudiante.html">
+                  <div>Información</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div>Cerrar sesión</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- #primary-menu end -->
+        </div>
+      </div>
+
+    </header>
+    <!-- #header end -->
+
+    <section id="page-title">
+			<div class="container clearfix">
+				<h1>Materias</h1>
+			</div>
+		</section>
+
+    <!-- Content
+    ============================================= -->
+    <section id="content">
+
+      <div class="content-wrap">
+
+        <div class="container clearfix">
+
+          <div class="col_full" align="center">
+            <a href="#" onclick="fun_contenido_temas(1)" class="button button-small button-circle button-3d button-purple"><i class="icon-rocket"></i>Actividades</a>
+            <a href="#" onclick="fun_contenido_temas(2)" class="button button-small button-circle button-3d button-pink"><i class="icon-book"></i>Libros</a>
+            <a href="#" onclick="fun_contenido_temas(3)" class="button button-small button-circle button-3d button-dirtygreen"><i class="icon-film"></i>Videos</a>
+					</div>
+
+          <!-- Div de contenido: Para la info de avance y para los botones de las tareas por materia -->
+          <div id="contenido_temas" class="col_full" align="center">
+
+          </div>
+
+          <!-- Div de contenido: Para la embeber las actividades (Tambien se deberia crear una funcion como fun_contenido_temas)-->
+          <div id="contenido_temas" class="col_full" align="center">
+          </div>
+
+          <!-- Funcion: Para desplegar los botones de las tareas por materia -->
+          <script>
+          function fun_contenido_temas(valor) {
+            var x;
+            switch (valor) {
+              case 1:
+              x = document.getElementById("tareas_matematicas").innerHTML;
+              break;
+              case 2:
+              x = document.getElementById("tareas_ciencias").innerHTML;
+              break;
+              case 3:
+              x = document.getElementById("tareas_lenguaje").innerHTML;
+              break;
+            }
+            document.getElementById("contenido_temas").innerHTML = x;
+          }
+          </script>
+
+          <!-- Divs "ocultos" que contienen los botones de las tareas y se despliegen con el "onclick" de la funcion -->
+          <div style="display:none;" id="tareas_matematicas">
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 4</a>
+					</div>
+
+          <div style="display:none;" id="tareas_ciencias">
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 4</a>
+					</div>
+
+          <div style="display:none;" id="tareas_lenguaje">
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 4</a>
+					</div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- #content end -->
+
+    <!-- Footer
+    ============================================= -->
+    <footer id="footer" class="dark">
+
+
+      <!-- Copyrights
+      ============================================= -->
+      <div id="copyrights">
+
+        <div class="container clearfix">
+
+          <div class="col_half">
+            Copyrights &copy; 2014 All Rights Reserved by Canvas Inc.<br>
+            <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- #copyrights end -->
+
+    </footer>
+    <!-- #footer end -->
+
+  </div>
+  <!-- #wrapper end -->
+
+  <!-- Go To Top
+  ============================================= -->
+  <div id="gotoTop" class="icon-angle-up"></div>
+
+  <!-- External JavaScripts
+  ============================================= -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+
+  <!-- Footer Scripts
+  ============================================= -->
+  <script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+
+</html>
