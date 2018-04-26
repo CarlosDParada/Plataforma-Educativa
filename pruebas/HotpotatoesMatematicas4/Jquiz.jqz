@@ -4,12 +4,12 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <rdf:Description rdf:about="">
     <dc:creator>myriamandrade</dc:creator>
-    <dc:title>Exploremos Nuestro entorno&amp;#x003C;img src=&quot;../../Pictures/IMG_20180414_141506629.jpg&quot; alt=&quot;IMG_20180414_141506629.jpg&quot; title=&quot;IMG_20180414_141506629&quot; width=&quot;267&quot; height=&quot;150&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;&amp;#x003C;br&amp;#x003E;</dc:title>
+    <dc:title>Exploremos Nuestro entorno&amp;#x003C;img src=&quot;IMG_20180414_141506629.jpg&quot; alt=&quot;IMG_20180414_141506629.jpg&quot; title=&quot;IMG_20180414_141506629&quot; width=&quot;267&quot; height=&quot;150&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;&amp;#x003C;br&amp;#x003E;</dc:title>
   </rdf:Description>
 </rdf:RDF><version>6</version>
 
 <data>
-<title>Exploremos Nuestro entorno&amp;#x003C;img src=&quot;../../Pictures/IMG_20180414_141506629.jpg&quot; alt=&quot;IMG_20180414_141506629.jpg&quot; title=&quot;IMG_20180414_141506629&quot; width=&quot;267&quot; height=&quot;150&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;&amp;#x003C;br&amp;#x003E;</title>
+<title>Exploremos Nuestro entorno&amp;#x003C;img src=&quot;IMG_20180414_141506629.jpg&quot; alt=&quot;IMG_20180414_141506629.jpg&quot; title=&quot;IMG_20180414_141506629&quot; width=&quot;267&quot; height=&quot;150&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;&amp;#x003C;br&amp;#x003E;</title>
 
 <timer><seconds>60</seconds><include-timer>0</include-timer></timer>
 

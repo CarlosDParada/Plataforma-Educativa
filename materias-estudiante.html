@@ -110,8 +110,10 @@
 
           <div class="col_full" align="center">
             <a href="#" onclick="fun_contenido_temas(1)" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Matenáticas</a>
-            <a href="#" onclick="fun_contenido_temas(2)" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Ciencias Naturales</a>
+            <a href="#" onclick="fun_contenido_temas(2)" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Sociales</a>
             <a href="#" onclick="fun_contenido_temas(3)" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Lenguaje</a>
+            <a href="#" onclick="fun_contenido_temas(4)" class="button button-small button-circle button-3d button-yellow"><i class="icon-comment"></i>Ingles</a>
+            <a href="#" onclick="fun_contenido_temas(5)" class="button button-small button-circle button-3d button-gold"><i class="icon-comment"></i>Naturales</a>
 					</div>
 
           <!-- Div de contenido: Para la info de avance y para los botones de las tareas por materia -->
@@ -135,6 +137,14 @@
                   <td>Lenguaje</td>
                   <td>20%</td>
                 </tr>
+                <tr>
+                    <td>Ingles</td>
+                    <td>30%</td>
+                  </tr>
+                  <tr>
+                      <td>Sociales</td>
+                      <td>80%</td>
+                    </tr>
                 </tbody>
               </table>
             </div>
@@ -153,10 +163,16 @@
               x = document.getElementById("tareas_matematicas").innerHTML;
               break;
               case 2:
-              x = document.getElementById("tareas_ciencias").innerHTML;
+              x = document.getElementById("tareas_sociales").innerHTML;
               break;
               case 3:
               x = document.getElementById("tareas_lenguaje").innerHTML;
+              break;
+              case 4:
+              x = document.getElementById("tareas_ingles").innerHTML;
+              break;
+              case 5:
+              x = document.getElementById("tareas_naturales").innerHTML;
               break;
             }
             document.getElementById("contenido_temas").innerHTML = x;
@@ -174,19 +190,35 @@
 
           </div>
 
-          <div style="display:none;" id="tareas_ciencias">
-            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 1</a>
-            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 2</a>
-            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 3</a>
-            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 4</a>
-					</div>
+          <div style="display:none;" id="tareas_sociales">
+              <a href="#" class="button button-small button-circle button-3d button-red but"id="sociales21" onclick="selectTema()"><i class="icon-globe"></i>Tema 2.1</a>
+              <a href="#" class="button button-small button-circle button-3d button-red but"id="sociales22" onclick="selectTema()"><i class="icon-globe"></i>Tema 2.2</a>
+              <a href="#" class="button button-small button-circle button-3d button-red but"id="sociales23" onclick="selectTema()"><i class="icon-globe"></i>Tema 2.3</a>
+            <a href="#" class="button button-small button-circle button-3d button-red but"id="sociales41" onclick="selectTema()"><i class="icon-globe"></i>Tema 4.1 </a>
+            <a href="#" class="button button-small button-circle button-3d button-red but"id="sociales42" onclick="selectTema()"><i class="icon-globe"></i>Tema 4.2</a>
+          </div>
 
           <div style="display:none;" id="tareas_lenguaje">
-            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 1</a>
-            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 2</a>
-            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 3</a>
-            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 4</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime but" id="lenguaje2" onclick="selectTema()"><i class="icon-comment"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime but" id="lenguaje3" onclick="selectTema()"><i class="icon-comment"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime but" id="lenguaje4" onclick="selectTema()"><i class="icon-comment"></i>Tema 4</a>
           </div>
+          <div style="display:none;" id="tareas_naturales">
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales2" onclick="selectTema()"><i class="icon-comment"></i>Tema 2</a>
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales21" onclick="selectTema()"><i class="icon-comment"></i>Tema 2.1</a>
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales22" onclick="selectTema()"><i class="icon-comment"></i>Tema 2.2</a>
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales23" onclick="selectTema()"><i class="icon-comment"></i>Tema 2.3</a>
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales4" onclick="selectTema()"><i class="icon-comment"></i>Tema 4</a>
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales41" onclick="selectTema()"><i class="icon-comment"></i>Tema 4.1</a>
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales42" onclick="selectTema()"><i class="icon-comment"></i>Tema 4.2</a>
+              <a href="#" class="button button-small button-circle button-3d button-gold but" id="naturales43" onclick="selectTema()"><i class="icon-comment"></i>Tema 4.3</a>
+            </div>
+
+          <div style="display:none;" id="tareas_ingles">
+              <a href="#" class="button button-small button-circle button-3d button-yellow but"id="ingles1" onclick="selectTema()"><i class="icon-globe"></i>Theme One</a>
+              <a href="#" class="button button-small button-circle button-3d button-yellow but"id="ingles2" onclick="selectTema()"><i class="icon-globe"></i>Theme Two</a>
+              <a href="#" class="button button-small button-circle button-3d button-yellow but"id="ingles3" onclick="selectTema()"><i class="icon-globe"></i>Theme three</a>
+            </div>
 <script>
   function selectTema(){
     $(".but").on("click",function(e) {
@@ -197,16 +229,111 @@
   }
   </script>
 
-        <div id="matematicas4div" class="content">
-          <iframe src="pruebas/HotpotatoesMatematicas4/index.htm" width="100%" height="800">
+      <div id="matematicas4div" class="content">
+        <iframe src="pruebas/HotpotatoesMatematicas4/index.htm" width="100%" height="800">
             alternative content for browsers which do not support iframe.
         </iframe>
-        </div>
+      </div>
       <div id="matematicas5div" class="content">
-      <iframe src="pruebas/HotpotatoesMatematicas5/index.htm" width="100%" height="800">
+        <iframe src="pruebas/HotpotatoesMatematicas5/index.htm" width="100%" height="800">
         alternative content for browsers which do not support iframe.
-    </iframe>
-    </div>
+        </iframe>
+      </div>
+      <div id="lenguaje4div" class="content">
+          <iframe src="pruebas/Hotpotatoeslenguaje4/index.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="lenguaje2div" class="content">
+          <iframe src="pruebas/Hotpotatoeslenguaje2/index.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>  
+      <div id="lenguaje3div" class="content">
+          <iframe src="pruebas/Hotpotatoeslenguaje3/RefuerzoLenguajegrado3.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div> 
+      <div id="ingles1div" class="content">
+          <iframe src="pruebas/HotpotatoesIngles1/JCross1Ingles.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="ingles2div" class="content">
+          <iframe src="pruebas/HotpotatoesIngles1/JCross2Ingles.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="ingles3div" class="content">
+          <iframe src="pruebas/HotpotatoesIngles1/RefuerzoIngles1JMatch.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales2div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales2/index.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales21div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales2/JCloze.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales22div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales2/JCross.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales23div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales2/JMatch.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales4div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales4/index.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales41div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales4/JCross.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales42div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales4/JCloze1.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="naturales43div" class="content">
+          <iframe src="pruebas/HotpotatoesNaturales4/JMatch.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="sociales21div" class="content">
+          <iframe src="pruebas/HotpotatoesSociales/Refuerzosegundo.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="sociales22div" class="content">
+          <iframe src="pruebas/HotpotatoesSociales/RefuerzosegundoTema2.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+        </div>
+      <div id="sociales23div" class="content">
+          <iframe src="pruebas/HotpotatoesSociales/Refuerzo3grado2.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="sociales41div" class="content">
+          <iframe src="pruebas/HotpotatoesSociales/Refuerzo1grado4.htmJQuiz.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>
+      <div id="sociales42div" class="content">
+          <iframe src="pruebas/HotpotatoesSociales/Refuerzo2grado4JCross.htm" width="100%" height="800">
+          alternative content for browsers which do not support iframe.
+          </iframe>
+      </div>       
 
       </div>
 

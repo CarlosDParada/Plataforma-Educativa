@@ -4,12 +4,12 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <rdf:Description rdf:about="">
     <dc:creator>myriamandrade</dc:creator>
-    <dc:title>&amp;#x003C;img src=&quot;../../Pictures/image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; Observa la imagen y elje la respuesta correcta&amp;#x003C;img src=&quot;../../Pictures/image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; width=&quot;386&quot; height=&quot;400&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</dc:title>
+    <dc:title>&amp;#x003C;img src=&quot;image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; Observa la imagen y elje la respuesta correcta&amp;#x003C;img src=&quot;image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; width=&quot;386&quot; height=&quot;400&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</dc:title>
   </rdf:Description>
 </rdf:RDF><version>6</version>
 
 <data>
-<title>&amp;#x003C;img src=&quot;../../Pictures/image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; Observa la imagen y elje la respuesta correcta&amp;#x003C;img src=&quot;../../Pictures/image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; width=&quot;386&quot; height=&quot;400&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</title>
+<title>&amp;#x003C;img src=&quot;image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; Observa la imagen y elje la respuesta correcta&amp;#x003C;img src=&quot;image002.jpg&quot; alt=&quot;image002.jpg&quot; title=&quot;image002&quot; width=&quot;386&quot; height=&quot;400&quot;&amp;#x003E;&amp;#x003C;/img&amp;#x003E;</title>
 
 <timer><seconds>60</seconds><include-timer>0</include-timer></timer>
 
