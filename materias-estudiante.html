@@ -165,28 +165,48 @@
 
           <!-- Divs "ocultos" que contienen los botones de las tareas y se despliegen con el "onclick" de la funcion -->
           <div style="display:none;" id="tareas_matematicas">
-            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 1</a>
-            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 2</a>
-            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 3</a>
-            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 4</a>
-					</div>
+              <div class="navigation">
+            <button class="button button-small button-circle button-3d button-aqua but " type="button" id="matematicas4" onclick="selectTema()"><i class="icon-bar-chart" ></i>Tema 1</button>
+            <button class="button button-small button-circle button-3d button-aqua but"  type="button" id="matematicas5" onclick="selectTema()"><i class="icon-bar-chart" ></i>Tema 2</button>
+            <button class="button button-small button-circle button-3d button-aqua but"  type="button" id="matematicas4" onclick="selectTema()"><i class="icon-bar-chart" ></i>Tema 3</button>
+            <button class="button button-small button-circle button-3d button-aqua but"  type="button" id="matematicas5" onclick="selectTema()"><i class="icon-bar-chart" ></i>Tema 4</button>
+        </div>
+
+          </div>
 
           <div style="display:none;" id="tareas_ciencias">
-            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 1</a>
-            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 2</a>
-            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 3</a>
-            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 4</a>
+            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-red but"><i class="icon-globe"></i>Tema 4</a>
 					</div>
 
           <div style="display:none;" id="tareas_lenguaje">
-            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 1</a>
-            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 2</a>
-            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 3</a>
-            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 4</a>
-					</div>
+            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime but"><i class="icon-comment"></i>Tema 4</a>
+          </div>
+<script>
+  function selectTema(){
+    $(".but").on("click",function(e) {
+              e.preventDefault();
+	            $(".content").hide();
+              $("#"+this.id+"div").show();
+            });
+  }
+  </script>
 
-
+        <div id="matematicas4div" class="content">
+          <iframe src="pruebas/HotpotatoesMatematicas4/index.htm" width="100%" height="800">
+            alternative content for browsers which do not support iframe.
+        </iframe>
         </div>
+      <div id="matematicas5div" class="content">
+      <iframe src="pruebas/HotpotatoesMatematicas5/index.htm" width="100%" height="800">
+        alternative content for browsers which do not support iframe.
+    </iframe>
+    </div>
 
       </div>
 

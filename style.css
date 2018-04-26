@@ -94,6 +94,14 @@
 /* ----------------------------------------------------------------
 	Basic
 -----------------------------------------------------------------*/
+div.editable {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.content { display:none }
 
 dl, dt, dd, ol, ul, li {
 	margin: 0;

@@ -9,6 +9,7 @@ $.fn.doOnce = function( func ) {
 	return this;
 }
 
+
 if( $().infinitescroll ) {
 
 	$.extend($.infinitescroll.prototype,{
