@@ -27,7 +27,7 @@
 
   <!-- Document Title
   ============================================= -->
-  <title>Padre de Familia</title>
+  <title>Docente</title>
 
 </head>
 
@@ -60,31 +60,31 @@
           <nav id="primary-menu">
 
             <ul>
-              <li>
-                <a href="index-padre.html">
-                  <div>Inicio</div>
-                </a>
-              </li>
-              <li>
-                <a href="materias-padre.html">
-                  <div>Materias</div>
-                </a>
-              </li>
-              <li>
-                <a href="recursos-padre.html">
-                  <div>Recursos</div>
-                </a>
-              </li>
-              <li class="current">
-                <a href="info-padre.html">
-                  <div>Información</div>
-                </a>
-              </li>
-              <li>
-                <a href="login-1.html">
-                  <div>Cerrar sesión</div>
-                </a>
-              </li>
+                <li>
+                    <a href="index-docente.html">
+                        <div>Inicio</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="materias-docentes.html">
+                        <div>Materias</div>
+                    </a>
+                </li>
+                <li class="current">
+                    <a href="recursos-docente.html">
+                        <div>Recursos</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="info-docente.html">
+                        <div>Información</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="login-1.html">
+                        <div>Cerrar sesión</div>
+                    </a>
+                </li>
             </ul>
           </nav>
           <!-- #primary-menu end -->
@@ -96,7 +96,7 @@
 
     <section id="page-title">
 			<div class="container clearfix">
-				<h1>Información</h1>
+				<h1>Materias</h1>
 			</div>
 		</section>
 
@@ -109,60 +109,58 @@
         <div class="container clearfix">
 
           <div class="col_full" align="center">
-            <h2>Institución Educativa<br>
-              Luis Manuel Parra Caro</h2>
+            <a href="#" onclick="fun_contenido_temas(1)" class="button button-small button-circle button-3d button-purple"><i class="icon-rocket"></i>Actividades</a>
+            <a href="#" onclick="fun_contenido_temas(2)" class="button button-small button-circle button-3d button-pink"><i class="icon-book"></i>Libros</a>
+            <a href="#" onclick="fun_contenido_temas(3)" class="button button-small button-circle button-3d button-dirtygreen"><i class="icon-film"></i>Videos</a>
+					</div>
+
+          <!-- Div de contenido: Para la info de avance y para los botones de las tareas por materia -->
+          <div id="contenido_temas" class="col_full" align="center">
+
           </div>
 
-          <div class="divider divider-center"><i class="icon-rocket"></i></div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+            </div>
+            <div class="panel-body" align="center">
+              <div class="col_one_third"> <h3>Disponibles</h3> </div>
+              <div class="col_one_third"> </div>
+              <div class="col_one_third col_last"> <h3>Fecha</h3> </div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Sede</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>Nombre de la sede</p>
-					</div>
+              <div class="col_one_third"> Actividad 1 </div>
+              <div class="col_one_third">
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-play"></i>Ver</a>
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-download"></i>Dercargar</a>
+              </div>
+              <div class="col_one_third col_last"> 21/03/2018 </div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Ubicación</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>Ubicación de la sede</p>
-					</div>
+              <div class="col_one_third"> Actividad 2 </div>
+              <div class="col_one_third">
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-play"></i>Ver</a>
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-download"></i>Dercargar</a>
+              </div>
+              <div class="col_one_third col_last"> 06/04/2018 </div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Docente</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>Nombre del Docente de la sede</p>
-					</div>
+              <div class="col_one_third"> Actividad 3 </div>
+              <div class="col_one_third">
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-play"></i>Ver</a>
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-download"></i>Dercargar</a>
+              </div>
+              <div class="col_one_third col_last"> 31/03/2018 </div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Inicio de clase</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>dd/mm/aaaa</p>
-					</div>
+              <div class="col_one_third"> Actividad 4 </div>
+              <div class="col_one_third">
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-play"></i>Ver</a>
+                <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-download"></i>Dercargar</a>
+              </div>
+              <div class="col_one_third col_last"> 11/02/2018 </div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Fin de clase</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>dd/mm/aaaa</p>
-					</div>
+              <div class="col_full">
+                <a href="#" class="button button-small button-circle button-3d button-amber"><i class="icon-edit"></i>Nueva</a>
+              </div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Entrega de informes</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>
-              1. dd/mm/aaaa<br>
-              2. dd/mm/aaaa<br>
-              3. dd/mm/aaaa<br>
-              4. dd/mm/aaaa
-            </p>
-					</div>
-
-
+            </div>
+          </div>
 
         </div>
 

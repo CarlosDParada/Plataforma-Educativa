@@ -65,7 +65,7 @@
                   <div>Inicio</div>
                 </a>
               </li>
-              <li>
+              <li class="current">
                 <a href="materias-padre.html">
                   <div>Materias</div>
                 </a>
@@ -75,7 +75,7 @@
                   <div>Recursos</div>
                 </a>
               </li>
-              <li class="current">
+              <li>
                 <a href="info-padre.html">
                   <div>Información</div>
                 </a>
@@ -96,7 +96,7 @@
 
     <section id="page-title">
 			<div class="container clearfix">
-				<h1>Información</h1>
+				<h1>Materias</h1>
 			</div>
 		</section>
 
@@ -109,59 +109,81 @@
         <div class="container clearfix">
 
           <div class="col_full" align="center">
-            <h2>Institución Educativa<br>
-              Luis Manuel Parra Caro</h2>
+            <a href="#" onclick="fun_contenido_temas(1)" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Matenáticas</a>
+            <a href="#" onclick="fun_contenido_temas(2)" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Ciencias Naturales</a>
+            <a href="#" onclick="fun_contenido_temas(3)" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Lenguaje</a>
+					</div>
+
+          <!-- Div de contenido: Para la info de avance y para los botones de las tareas por materia -->
+          <div id="contenido_temas" class="col_full" align="center">
+            <div class="divider divider-center"><i class="icon-rocket"></i></div>
+            <div class="col_half" style="text-align: right;">
+              <h2>Avance</h2>
+            </div>
+            <div class="col_half col_last">
+              <table class="table table-hover">
+                <tbody>
+                <tr>
+                  <td>Matemáticas</td>
+                  <td>50%</td>
+                 </tr>
+                <tr>
+                  <td>Ciencias Naturales</td>
+                  <td>30%</td>
+                </tr>
+                <tr>
+                  <td>Lenguaje</td>
+                  <td>20%</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
-          <div class="divider divider-center"><i class="icon-rocket"></i></div>
+          <!-- Div de contenido: Para la embeber las actividades (Tambien se deberia crear una funcion como fun_contenido_temas)-->
+          <div id="contenido_temas" class="col_full" align="center">
+          </div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Sede</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>Nombre de la sede</p>
-					</div>
+          <!-- Funcion: Para desplegar los botones de las tareas por materia -->
+          <script>
+          function fun_contenido_temas(valor) {
+            var x;
+            switch (valor) {
+              case 1:
+              x = document.getElementById("tareas_matematicas").innerHTML;
+              break;
+              case 2:
+              x = document.getElementById("tareas_ciencias").innerHTML;
+              break;
+              case 3:
+              x = document.getElementById("tareas_lenguaje").innerHTML;
+              break;
+            }
+            document.getElementById("contenido_temas").innerHTML = x;
+          }
+          </script>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Ubicación</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>Ubicación de la sede</p>
-					</div>
-
-          <div class="col_half" style="text-align: right;">
-						<h3>Docente</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>Nombre del Docente de la sede</p>
-					</div>
-
-          <div class="col_half" style="text-align: right;">
-						<h3>Inicio de clase</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>dd/mm/aaaa</p>
-					</div>
-
-          <div class="col_half" style="text-align: right;">
-						<h3>Fin de clase</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>dd/mm/aaaa</p>
+          <!-- Divs "ocultos" que contienen los botones de las tareas y se despliegen con el "onclick" de la funcion -->
+          <div style="display:none;" id="tareas_matematicas">
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-aqua"><i class="icon-bar-chart"></i>Tema 4</a>
 					</div>
 
-          <div class="col_half" style="text-align: right;">
-						<h3>Entrega de informes</h3>
-					</div>
-          <div class="col_half col_last">
-            <p>
-              1. dd/mm/aaaa<br>
-              2. dd/mm/aaaa<br>
-              3. dd/mm/aaaa<br>
-              4. dd/mm/aaaa
-            </p>
+          <div style="display:none;" id="tareas_ciencias">
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-red"><i class="icon-globe"></i>Tema 4</a>
 					</div>
 
+          <div style="display:none;" id="tareas_lenguaje">
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 1</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 2</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 3</a>
+            <a href="#" class="button button-small button-circle button-3d button-lime"><i class="icon-comment"></i>Tema 4</a>
+					</div>
 
 
         </div>
