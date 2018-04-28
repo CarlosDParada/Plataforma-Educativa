@@ -42,7 +42,10 @@
 
       <div class="content-wrap nopadding">
 
-        <div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: #444;"></div>
+        <!-- <div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: #444;"></div> -->
+        
+        <div class="section nopadding nomargin" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url('images/colegio.png') no-repeat center center fixed; background-size: cover;"></div>
+        <!-- background-size: 100% 100%; auto;-->
 
         <div class="section nobg full-screen nopadding nomargin">
           <div class="container vertical-middle divcenter clearfix">
@@ -54,7 +57,7 @@
 
                   <div class="col_full">
                     <label for="login-form-username">Nombre de usuario:</label>
-                    <input type="text" id="login-form-username" name="login-form-username" placeholder="usuario1Test" value="" class="form-control not-dark" />
+                    <input type="text" id="login-form-username" name="login-form-username" value="" class="form-control not-dark" />
                   </div>
 
                   <div class="col_full">
@@ -89,21 +92,27 @@
       <!-- #content end -->
       <script>
       function selectPerfil(){
-        perfil = document.getElementById('login-form-perfil');
-        // alert('Bienvenido Estudiante');
-        // window.location.href="index-estudiante.html";
+        var username = document.getElementById('login-form-username').value;
+        var password = document.getElementById('login-form-password').value;
+        var perfil = document.getElementById('login-form-perfil').value;
 
-        if(perfil.value=="Estudiante"){
-          alert("Bienvenido Estudiante");
+        if(username=="" || password=="" || perfil==""){
+          alert("Por favor ingrese todos los campos!");
+        }
+        else if(perfil=="Estudiante" && username=="estuplata1" && password=="estuplata1"){
+           //alert("Bienvenido Estudiante");
           window.location.href="index-estudiante.html";
         }
-        else if(perfil.value=="Padre_de_familia"){
-          alert('Bienvenido Padre de Familia');
+        else if(perfil=="Padre_de_familia" && username=="padreplata1" && password=="padreplata1"){
+          //alert('Bienvenido Padre de Familia');
           window.location.href="index-padre.html";
         }
-        else if(perfil.value=="Docente"){
-          alert('Bienvenido Docente');
+        else if(perfil=="Docente" && username=="doceplata1" && password=="doceplata1"){
+          //alert('Bienvenido Docente');
           window.location.href="index-docente.html";
+        }
+         else {
+           alert('Usuario, contraseña o perfil no válidos!');
         }
       }
       </script>
